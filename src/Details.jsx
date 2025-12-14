@@ -36,6 +36,7 @@ const Details = () => {
         axios.post('http://localhost:3000/orders', formData)
             .then(res => {
                 console.log(res);
+                alert("order confirm")
             })
             .catch(err => {
                 console.log(err);

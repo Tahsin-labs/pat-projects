@@ -22,6 +22,7 @@ import AddService from './AddService.jsx';
 import Mylisting from './Mylisting.jsx';
 import Edit from './Edit.jsx';
 import Orders from './Orders.jsx';
+import About from './About.jsx';
 
 
 const router = createBrowserRouter([
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
       {
         path: "edit/:id",
         Component: Edit
+      },
+      {
+        path: "about",
+        Component: About
       },
         {
         path: "orders",

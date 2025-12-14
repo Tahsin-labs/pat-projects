@@ -14,7 +14,7 @@ const Home = () => {
 
 
       <section
-        className="max-w-6xl mx-auto px-4 py-10"
+        className="max-w-6xl mx-auto px-4 py-10 "
         data-aos="zoom-in"
         data-aos-duration="1200"
       >
@@ -22,12 +22,14 @@ const Home = () => {
                     {user && user.email}
                 </p> */}
 
-        <div className="carousel w-full rounded-xl overflow-hidden shadow-[0_0_25px_rgba(255,0,255,0.3)]">
+        <div className="carousel w-full rounded-xl overflow-hidden shadow-[0_0_25px_rgba(255,0,255,0.3)] h-100">
 
           <div id="slide1" className="carousel-item relative w-full">
-            <img
-              src="https://storage.pixteller.com/designs/designs-images/2021-01-01/02/dog-food-premium-pet-food-1-5fef0f3a6cebb.png"
-              className="w-full object-cover"
+            <img 
+
+
+              src=" https://image.chukouplus.com/upload/C_1127/file/20220616/56e529b7e08f5c52d56407b79c49a0d5.jpg"
+              className="w-full object-cover h-100"
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
               <a href="#slide4" className="btn btn-circle">❮</a>
@@ -38,7 +40,7 @@ const Home = () => {
 
           <div id="slide2" className="carousel-item relative w-full">
             <img
-              src="https://i.ibb.co/JFC1ympY/free-fortnite-winter-christmas-game-banner-photoshop-template-990x330.jpg"
+              src="https://cdn.vectorstock.com/i/500p/97/69/playful-pet-shop-discount-banner-vector-53919769.jpg"
               className="w-full object-cover"
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
@@ -50,7 +52,7 @@ const Home = () => {
 
           <div id="slide3" className="carousel-item relative w-full">
             <img
-              src="https://i.ibb.co/99kKh8Q3/free-esports-competition-video-game-themed-banner-psd-template.jpg"
+              src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-shop-banner-design-template-4c29604da3e3601ec0a5d464e2cbeb4b_screen.jpg?ts=1737954014"
               className="w-full object-cover"
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
@@ -62,7 +64,7 @@ const Home = () => {
 
           <div id="slide4" className="carousel-item relative w-full">
             <img
-              src="https://i.ibb.co/FbGCzxGm/istockphoto-1308185301-170667a.jpg"
+              src="https://storage.pixteller.com/designs/designs-images/2021-01-01/02/dog-food-premium-pet-food-1-5fef0f3a6cebb.png"
               className="w-full object-cover"
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
@@ -76,9 +78,7 @@ const Home = () => {
 
       <section className="py-16 px-15">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-extrabold text-center mb-4 text-purple-300 drop-shadow-md tracking-wide">
-            Trending Pet
-          </h2>
+          <h2 className="text-4xl font-bold text-pink-600 mb-4">Tranding Pets</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {homeApp.slice(0, 3).map((app) => (
@@ -99,7 +99,7 @@ const Home = () => {
 
 
       {/* ================= SMART PET TAG PROMO SECTION ================= */}
-      <section className="pb-20 bg-[#E8F5E9]">
+      <section className="pb-30 bg-[#E8F5E9]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* LEFT IMAGE */}
@@ -112,7 +112,7 @@ const Home = () => {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div>
+          <div className="px-20">
             <p className="text-pink-500 font-semibold mb-2 italic">
               Smart
             </p>
@@ -183,9 +183,9 @@ const Home = () => {
       </section>
 
 
-      {/* ================= PETS LIFESTYLE SECTION ================= */}
-      <section className="pb-60 px-15 bg-[#E8F5E9]">
-        <div className="max-w-7xl mx-auto">
+    
+      <section className="pb-10 px-15 bg-[#E8F5E9]">
+        <div className="max-w-7xl mx-auto mb-5">
 
           {/* Header */}
           <div className="text-center mb-14">
@@ -290,7 +290,10 @@ const Home = () => {
 
 
 
-      <section className="py-20 bg-[#F7FAF7] px-4">
+
+
+
+      <section className="py-20 bg-[#F7FAF7] px-9">
         <div className="max-w-7xl mx-auto">
 
           {/* Header */}

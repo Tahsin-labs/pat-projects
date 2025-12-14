@@ -35,14 +35,18 @@ const Header = () => {
                             <li><NavLink className="hover:text-purple-300" to="/">Home</NavLink></li>
                             <li><NavLink className="hover:text-purple-300" to="/game">All Pet</NavLink></li>
                             <li><NavLink className="hover:text-purple-300" to="/about">About</NavLink></li>
-                            <li><NavLink className="hover:text-purple-300" to="/addService">AddService</NavLink></li>
-                            <li><NavLink className="hover:text-purple-300" to="/myListing">Listing</NavLink></li>
-                            <li><NavLink className="hover:text-purple-300" to="/orders">Orders</NavLink></li>
+                            {
+                                user && (
+                                    <> <li><NavLink className="hover:text-purple-300" to="/addService">AddService</NavLink></li>
+                                        <li><NavLink className="hover:text-purple-300" to="/myListing">Listing</NavLink></li>
+                                        <li><NavLink className="hover:text-purple-300" to="/orders">Orders</NavLink></li></>
+                                )
+                            }
                         </ul>
                     </div>
 
                     <Link to="/" className="text-2xl font-bold text-purple-400 tracking-wide">
-                        TahsinLAB..
+                        <img src="https://amarpet.com/assets/icons/amar-pet.svg" alt="" />
                     </Link>
                 </div>
 
