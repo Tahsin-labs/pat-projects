@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1,
+    "title": "Player Unknowns Battle Ground",
+    "rating": 4.8,
+    "genre": [
+      "Action",
+      "Sci-Fi",
+      "Shooter"
+    ],
+    "size": "2.5 GB",
+    "release": "2024",
+    "description": "A futuristic shooter where you battle rogue AI robots across neon-lit cities and upgrade powerful weapons.",
+    "cover": "https://i.ibb.co/LDW9HBYY/f7e5c999857701-5efc0ba660ffd.jpg",
+    "screenshots": [
+      "https://i.ibb.co/3fs1RnB/ss1.jpg",
+      "https://i.ibb.co/ZK1x4Mw/ss2.jpg",
+      "https://i.ibb.co/BC4zZ89/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 10 / 11",
+      "processor": "Intel i5 or higher",
+      "ram": "8 GB",
+      "graphics": "GTX 1050 or better",
+      "storage": "5 GB"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Call of Duty Mobile",
+    "rating": 4.6,
+    "genre": [
+      "Action",
+      "Stealth",
+      "Adventure"
+    ],
+    "size": "1.8 GB",
+    "release": "2023",
+    "description": "Play as a silent assassin in a world of shadows. Use stealth, speed, and precision to defeat enemies.",
+    "cover": "https://i.ibb.co/KcqQ480S/346190abf755e3883d1353fbc8d8ccb7e1acf076f1138d6b.jpg",
+    "screenshots": [
+      "https://i.ibb.co/nMhGgbL/ss1.jpg",
+      "https://i.ibb.co/p4BVwQK/ss2.jpg",
+      "https://i.ibb.co/pzxTcKp/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 10",
+      "processor": "Intel i3 or higher",
+      "ram": "6 GB",
+      "graphics": "GTX 750 or better",
+      "storage": "3 GB"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Free Fire",
+    "rating": 4.4,
+    "genre": [
+      "Racing",
+      "Sports"
+    ],
+    "size": "3.2 GB",
+    "release": "2022",
+    "description": "High-speed racing game with realistic physics, drifting mechanics, and exotic supercars.",
+    "cover": "https://i.ibb.co/Lz6V63RW/aa959aa3d8790d3a44f7f20f16adfa01.jpg",
+    "screenshots": [
+      "https://i.ibb.co/rtzYLLC/ss1.jpg",
+      "https://i.ibb.co/JBQcq5p/ss2.jpg",
+      "https://i.ibb.co/qMmytg7/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 10",
+      "processor": "Intel i5",
+      "ram": "8 GB",
+      "graphics": "GTX 960",
+      "storage": "6 GB"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Asphalt 9",
+    "rating": 4.7,
+    "genre": [
+      "Strategy",
+      "Space",
+      "War"
+    ],
+    "size": "4.1 GB",
+    "release": "2024",
+    "description": "Command fleets, conquer galaxies, and fight alien civilizations in this massive space strategy game.",
+    "cover": "https://i.ibb.co/23d116F3/images-5.jpg",
+    "screenshots": [
+      "https://i.ibb.co/LYKchJx/ss1.jpg",
+      "https://i.ibb.co/MZPcJhy/ss2.jpg",
+      "https://i.ibb.co/2qshs3t/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 10 / 11",
+      "processor": "Intel i5",
+      "ram": "8 GB",
+      "graphics": "GTX 1050",
+      "storage": "7 GB"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Genshin Impact",
+    "rating": 4.3,
+    "genre": [
+      "Horror",
+      "Shooter",
+      "Survival"
+    ],
+    "size": "5.6 GB",
+    "release": "2023",
+    "description": "Survive endless waves of zombies, craft weapons, and rescue lost survivors in a destroyed world.",
+    "cover": "https://i.ibb.co/Fkqm14C5/588720a686e20fc3d0ed0fa5d42b10d0981341dde320e3c6.jpg",
+    "screenshots": [
+      "https://i.ibb.co/559W9wd/ss1.jpg",
+      "https://i.ibb.co/9h3Yb0H/ss2.jpg",
+      "https://i.ibb.co/XtWSmFT/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 10",
+      "processor": "Intel i5",
+      "ram": "8 GB",
+      "graphics": "GTX 970",
+      "storage": "10 GB"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Subway Surfers",
+    "rating": 4.9,
+    "genre": [
+      "RPG",
+      "Adventure",
+      "Magic"
+    ],
+    "size": "6.4 GB",
+    "release": "2024",
+    "description": "Enter a mystical world full of dragons, magic, kingdoms, and powerful heroes. An open-world RPG adventure.",
+    "cover": "https://i.ibb.co/3yJW86sm/img-9060.webp",
+    "screenshots": [
+      "https://i.ibb.co/vhNpXgN/ss1.jpg",
+      "https://i.ibb.co/w7gb2ph/ss2.jpg",
+      "https://i.ibb.co/mvBvTh8/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 11",
+      "processor": "Intel i7",
+      "ram": "16 GB",
+      "graphics": "RTX 2060",
+      "storage": "20 GB"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Clash of Clans",
+    "rating": 4.5,
+    "genre": [
+      "Shooter",
+      "Multiplayer",
+      "Battle Royale"
+    ],
+    "size": "3.9 GB",
+    "release": "2022",
+    "description": "A fast-paced battle royale where 100 players fight to survive using weapons, vehicles, and teamwork.",
+    "cover": "https://i.ibb.co/s9FJzf3R/og-clashofclans-f3149338.jpg",
+    "screenshots": [
+      "https://i.ibb.co/pWbjncj/ss1.jpg",
+      "https://i.ibb.co/7yJNJSk/ss2.jpg",
+      "https://i.ibb.co/Mfz3KNf/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 10",
+      "processor": "Intel i5",
+      "ram": "8 GB",
+      "graphics": "GTX 1060",
+      "storage": "8 GB"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Minecraft",
+    "rating": 4.2,
+    "genre": [
+      "Fighting",
+      "Action"
+    ],
+    "size": "1.4 GB",
+    "release": "2021",
+    "description": "A classic arcade-style fighting game with combos, special moves, and powerful characters.",
+    "cover": "https://i.ibb.co/4np0wdbc/0a33bcaba879403460afe2ff2aafaaefeede964e0fc11a430f71077867cc87f1.jpg",
+    "screenshots": [
+      "https://i.ibb.co/181cvKg/ss1.jpg",
+      "https://i.ibb.co/5FwjV0q/ss2.jpg",
+      "https://i.ibb.co/SxDWJvV/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 7 / 10",
+      "processor": "Intel i3",
+      "ram": "4 GB",
+      "graphics": "GTX 650",
+      "storage": "2 GB"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Valorant Mobile",
+    "rating": 4.1,
+    "genre": [
+      "Simulation",
+      "Casual",
+      "Relaxing"
+    ],
+    "size": "900 MB",
+    "release": "2023",
+    "description": "Grow crops, raise animals, upgrade your farm, and enjoy a peaceful countryside life.",
+    "cover": "https://i.ibb.co/tTx70qVT/images-7.jpg",
+    "screenshots": [
+      "https://i.ibb.co/FwP2JN5/ss1.jpg",
+      "https://i.ibb.co/7bYRVFp/ss2.jpg",
+      "https://i.ibb.co/FHgWBFt/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 10",
+      "processor": "Intel i3",
+      "ram": "4 GB",
+      "graphics": "Intel HD Graphics",
+      "storage": "1.5 GB"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Mystery Mansion",
+    "rating": 4.0,
+    "genre": [
+      "Horror",
+      "Puzzle",
+      "Mystery"
+    ],
+    "size": "1.2 GB",
+    "release": "2022",
+    "description": "Explore a haunted mansion, solve puzzles, uncover secrets, and escape the mysterious darkness.",
+    "cover": "https://i.ibb.co/4ftbvvH/cover9.jpg",
+    "screenshots": [
+      "https://i.ibb.co/YfSZFZc/ss1.jpg",
+      "https://i.ibb.co/xqmpTh1/ss2.jpg",
+      "https://i.ibb.co/y43PHdk/ss3.jpg"
+    ],
+    "requirements": {
+      "os": "Windows 10",
+      "processor": "Intel i3",
+      "ram": "6 GB",
+      "graphics": "GTX 760",
+      "storage": "3 GB"
+    }
+  }
+]
