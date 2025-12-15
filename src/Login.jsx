@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router';
 // import { AuthContext } from '../Provider/AuthProvider';
 import { Toaster } from "react-hot-toast";
 import { AuthContext } from './AuthProvider';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Login = () => {
     const [error, setError] = useState("");
@@ -21,12 +22,16 @@ const Login = () => {
         signIn(email, password)
             .then(result => navigate(location.state || "/"))
             .catch(err => setError(err.code));
+        toast("Loging Done")
+
     };
 
     const signGoogle = () => {
         handleGoogleIn()
             .then(result => signIn(result.user))
             .catch(err => console.log(err));
+
+
     };
 
     return (
@@ -36,7 +41,7 @@ const Login = () => {
                 backgroundImage: `url('https://i.ibb.co/CsQ8P2zB/Eo-Rvvd-QR4-S3o-XLEb-TYPx-FW.jpg')`,
             }}
         >
-            
+
             <div className="
                 backdrop-blur-xl bg-white/10 border border-white/20
                 shadow-2xl rounded-2xl p-8 w-full max-w-sm
@@ -48,7 +53,7 @@ const Login = () => {
                         Login
                     </h2>
 
-            
+
                     <label className="text-white/80 text-sm">Email</label>
                     <input
                         ref={emailRef}
@@ -63,7 +68,7 @@ const Login = () => {
                         placeholder="Email"
                     />
 
-                
+
                     <label className="text-white/80 text-sm">Password</label>
                     <input
                         type="password"
@@ -77,7 +82,7 @@ const Login = () => {
                         placeholder="Password"
                     />
 
-                    
+
                     <div className="text-right">
                         <Link className="text-white/70 text-sm hover:underline" to="/forget-password">
                             Forgot password?
@@ -86,7 +91,7 @@ const Login = () => {
 
                     {error && <p className="text-red-400 text-xs">{error}</p>}
 
-                
+
                     <button
                         type="button"
                         onClick={signGoogle}
@@ -105,7 +110,7 @@ const Login = () => {
                         Login with Google
                     </button>
 
-                
+
                     <button
                         type="submit"
                         className="
@@ -127,7 +132,7 @@ const Login = () => {
                 </form>
             </div>
 
-            <Toaster position="top-center" />
+            <ToastContainer />
         </div>
     );
 };

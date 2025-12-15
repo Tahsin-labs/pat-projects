@@ -6,7 +6,7 @@ const Footer = () => {
             <footer className="bg-gray-600 text-gray-200 py-12">
                 <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between gap-8">
 
-                    {/* Logo & Contact */}
+            
                     <div className="flex flex-col gap-4">
                         <div className='flex'>
                             <img src="https://amarpet.com/assets/icons/amar-pet.svg" alt="" />
@@ -20,7 +20,7 @@ const Footer = () => {
                         <p>Email: <a href="mailto:support@amarpet.com" className="hover:text-purple-500">support@amarpet.com</a></p>
                     </div>
 
-                    {/* About Links */}
+                
                     <div className="flex flex-col gap-2">
                         <h3 className="font-semibold text-white mb-2">About</h3>
                         <a href="#" className="hover:text-purple-500">About Us</a>
@@ -28,7 +28,7 @@ const Footer = () => {
                         <a href="#" className="hover:text-purple-500">FAQs</a>
                     </div>
 
-                    {/* Customer Service */}
+                    
                     <div className="flex flex-col gap-2">
                         <h3 className="font-semibold text-white mb-2">Customer Service</h3>
                         <a href="#" className="hover:text-purple-500">Privacy Policy</a>
@@ -36,7 +36,7 @@ const Footer = () => {
                         <a href="#" className="hover:text-purple-500">Return & Refund Policy</a>
                     </div>
 
-                    {/* Mobile Apps */}
+                
                     <div className="flex flex-col gap-2">
                         <h3 className="font-semibold text-white mb-2">Mobile Apps</h3>
                         <div className="flex gap-4 mt-2">

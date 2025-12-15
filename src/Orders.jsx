@@ -27,11 +27,11 @@ const Orders = () => {
     const handleDownloadPDF = () => {
         const doc = new jsPDF();
 
-        // Title
+        
         doc.setFontSize(18);
         doc.text("My Orders Report - PawMart", 14, 15);
 
-        // Table Head
+    
         const tableColumn = [
             "#",
             "Product Name",
@@ -42,7 +42,7 @@ const Orders = () => {
             "Date",
         ];
 
-        // Table Body
+    
         const tableRows = [];
 
         myOrders.forEach((order, index) => {
@@ -83,7 +83,7 @@ const Orders = () => {
         <div className="min-h-screen bg-[#F9FAFB] p-6">
             <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-md p-6">
 
-                {/* Header */}
+                
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="text-2xl font-bold text-gray-800">
                         My Orders
@@ -97,7 +97,7 @@ const Orders = () => {
                     </button>
                 </div>
 
-                {/* Loading Spinner */}
+                
                 {loading ? (
                     <div className="flex justify-center items-center py-20">
                         <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-purple-500 border-b-4 border-gray-200"></div>

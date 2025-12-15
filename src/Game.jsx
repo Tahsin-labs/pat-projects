@@ -45,10 +45,10 @@ const Game = () => {
                         Pick Your Products
                     </h2>
 
-                    {/* Filter Bar */}
+                    
                     <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
 
-                        {/* Category - LEFT */}
+                
                         <select
                             onChange={(e) => setCategory(e.target.value)}
                             value={category}
@@ -62,7 +62,7 @@ const Game = () => {
                             <option value="care-products">Care Products</option>
                         </select>
 
-                        {/* Search - RIGHT */}
+            
                         <input
                             type="text"
                             placeholder="Search by product name..."
@@ -73,7 +73,7 @@ const Game = () => {
                         />
                     </div>
 
-                    {/* Loading Indicator */}
+        
                     {loading ? (
                         <div className="flex justify-center items-center py-20">
                             <span className="loading loading-bars loading-xl"></span>

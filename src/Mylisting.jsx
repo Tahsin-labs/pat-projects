@@ -56,18 +56,18 @@ const Mylisting = () => {
         <div className="min-h-screen bg-[#F9FAFB] p-6">
             <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-md p-6">
 
-                {/* Header */}
+            
                 <h2 className="text-2xl font-bold text-gray-800 mb-6">
                     My Listings
                 </h2>
 
-                {/* Loading Spinner */}
+                
                 {loading ? (
                     <div className="flex justify-center items-center py-20">
                         <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-b-4 border-gray-200"></div>
                     </div>
                 ) : (
-                    /* Table */
+            
                     <div className="overflow-x-auto">
                         <table className="table w-full">
                             <thead className="bg-gray-100 text-gray-700">

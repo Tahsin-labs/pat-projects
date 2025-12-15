@@ -98,11 +98,11 @@ const Home = () => {
 
 
 
-      {/* ================= SMART PET TAG PROMO SECTION ================= */}
+    
       <section className="pb-30 bg-[#E8F5E9]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-          {/* LEFT IMAGE */}
+          
           <div className="flex justify-center">
             <img
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/8218cf210855141.6718a53c922d8.jpg"
@@ -111,7 +111,7 @@ const Home = () => {
             />
           </div>
 
-          {/* RIGHT CONTENT */}
+          
           <div className="px-20">
             <p className="text-pink-500 font-semibold mb-2 italic">
               Smart
@@ -125,7 +125,7 @@ const Home = () => {
               Secure your loving pet with QR code & NFC based smart pet tag.
             </p>
 
-            {/* FEATURES */}
+            
             <ul className="space-y-4 mb-8">
               <li className="flex gap-3">
                 <span className=" text-gray-900 text-xl">✔</span>
@@ -159,7 +159,7 @@ const Home = () => {
               </li>
             </ul>
 
-            {/* PRICE */}
+        
             <div className="flex items-center gap-4 mb-6">
               <span className="text-gray-400 line-through text-xl">
                 ৳499
@@ -169,7 +169,7 @@ const Home = () => {
               </span>
             </div>
 
-            {/* BUTTONS */}
+        
             <div className="flex gap-4">
               <button className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-xl font-semibold">
                 Buy Now
@@ -187,7 +187,7 @@ const Home = () => {
       <section className="pb-10 px-15 bg-[#E8F5E9]">
         <div className="max-w-7xl mx-auto mb-5">
 
-          {/* Header */}
+          
           <div className="text-center mb-14">
             <h2 className="text-4xl font-extrabold text-gray-900 mb-3">
               Pets Lifestyle
@@ -197,10 +197,10 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Cards */}
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            {/* Card 1 */}
+          
             <div className="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
               <img
                 src="https://www.fearfreehappyhomes.com/wp-content/uploads/2021/03/bigstock-Domestic-Cat-Drinks-Water-From-401173676.jpg"
@@ -228,7 +228,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Card 2 */}
+          
             <div className="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp62Os3jzmlkbCaCVdcLItUh33hkvF2yu86w&s"
@@ -256,7 +256,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Card 3 */}
+        
             <div className="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
               <img
                 src="https://www.amfthings.com/wp-content/uploads/2024/06/IMG_9883.jpeg"

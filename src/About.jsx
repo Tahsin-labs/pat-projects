@@ -5,7 +5,7 @@ const About = () => {
         <div>
             <div className="min-h-screen bg-gradient-to-b from-pink-50 via-purple-50 to-green-50">
 
-                {/* Hero Section */}
+        
                 <section className="text-center py-20 px-6 relative">
                     <h1 className="text-5xl md:text-6xl font-extrabold text-pink-600 mb-6 drop-shadow-lg">
                         Welcome to AmarPet
@@ -20,7 +20,7 @@ const About = () => {
                     />
                 </section>
 
-                {/* Our Mission */}
+            
                 <section className="max-w-7xl mx-auto my-20 px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Mission</h2>
@@ -30,7 +30,7 @@ const About = () => {
                         </p>
                     </div>
 
-                    {/* Services Cards */}
+            
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center">
                             <FaPaw className="text-pink-500 text-4xl mx-auto mb-4" />
@@ -55,7 +55,7 @@ const About = () => {
                     </div>
                 </section>
 
-                {/* Call to Action */}
+                
                 <section className="bg-pink-100 py-20 px-6 text-center rounded-3xl mx-6 md:mx-20 shadow-lg">
                     <h2 className="text-4xl font-bold text-pink-600 mb-4">Join the AmarPet Family</h2>
                     <p className="text-gray-700 mb-8 max-w-2xl mx-auto">

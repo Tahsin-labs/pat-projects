@@ -70,7 +70,7 @@ const Edit = () => {
 
                 <form onSubmit={handleUpdate} className="space-y-5">
 
-                    {/* Product Name */}
+                
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Product Name
@@ -86,7 +86,7 @@ const Edit = () => {
                         />
                     </div>
 
-                    {/* Category */}
+            
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Category
@@ -108,7 +108,7 @@ const Edit = () => {
                         </select>
                     </div>
 
-                    {/* Price */}
+            
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Price (Taka)
@@ -124,7 +124,7 @@ const Edit = () => {
                         />
                     </div>
 
-                    {/* Image URL */}
+        
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Image URL
@@ -141,7 +141,7 @@ const Edit = () => {
                         />
                     </div>
 
-                    {/* Location */}
+                
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Location
@@ -157,7 +157,7 @@ const Edit = () => {
                         />
                     </div>
 
-                    {/* Description */}
+    
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Description
@@ -173,7 +173,7 @@ const Edit = () => {
                         ></textarea>
                     </div>
 
-                    {/* Date */}
+                    
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Date
@@ -187,7 +187,7 @@ const Edit = () => {
                         />
                     </div>
 
-                    {/* Email */}
+    
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Email
