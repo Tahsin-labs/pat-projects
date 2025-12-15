@@ -4,27 +4,35 @@ import Appk from './Appk';
 const Game = () => {
     const [homeApp, setHomeApp] = useState([]);
     const [category, setCategory] = useState('');
-    const [loading, setLoading] = useState(true); // <-- loading state
+    const [search, setSearch] = useState('');
+    const [loading, setLoading] = useState(true);
 
     // Fetch data from backend
     useEffect(() => {
         const fetchData = async () => {
             try {
-                setLoading(true); // start loading
+                setLoading(true);
                 const res = await fetch('http://localhost:3000/services');
                 const data = await res.json();
                 setHomeApp(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
             } finally {
-                setLoading(false); // stop loading
+                setLoading(false);
             }
         };
         fetchData();
     }, []);
 
-    // Filter products by category if selected
-    const filteredApps = category ? homeApp.filter(app => app.category === category) : homeApp;
+    // Filter by category & search by name
+    const filteredApps = homeApp.filter(app => {
+        const matchCategory = category ? app.category === category : true;
+        const matchSearch = app.name
+            ?.toLowerCase()
+            .includes(search.toLowerCase());
+
+        return matchCategory && matchSearch;
+    });
 
     return (
         <div className="min-h-screen bg-gradient-to-b bg-[#E8F5E9] text-gray-900 pb-20">
@@ -34,16 +42,18 @@ const Game = () => {
 
                     <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 
                     text-pink-600 drop-shadow-lg tracking-wide font-serif">
-                        Pic Your Products
+                        Pick Your Products
                     </h2>
 
-                    {/* Cute Select Dropdown */}
-                    <div className="flex justify-center mb-10">
+                    {/* Filter Bar */}
+                    <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
+
+                        {/* Category - LEFT */}
                         <select
                             onChange={(e) => setCategory(e.target.value)}
                             value={category}
                             className="px-6 py-3 rounded-full bg-white/80 shadow-md border border-pink-300 
-                            focus:ring-2 focus:ring-pink-400 text-gray-700"
+                            focus:ring-2 focus:ring-pink-400 text-gray-700 w-full md:w-64"
                         >
                             <option value="">All Categories</option>
                             <option value="pets">Pets</option>
@@ -51,6 +61,16 @@ const Game = () => {
                             <option value="accessories">Accessories</option>
                             <option value="care-products">Care Products</option>
                         </select>
+
+                        {/* Search - RIGHT */}
+                        <input
+                            type="text"
+                            placeholder="Search by product name..."
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
+                            className="px-6 py-3 rounded-full bg-white/80 shadow-md border border-purple-300 
+                            focus:ring-2 focus:ring-purple-400 text-gray-700 w-full md:w-80"
+                        />
                     </div>
 
                     {/* Loading Indicator */}
@@ -59,20 +79,24 @@ const Game = () => {
                             <span className="loading loading-bars loading-xl"></span>
                         </div>
                     ) : (
-                        /* Cards Grid */
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                            {filteredApps.map(app => (
-                                <div
-                                    key={app.id}
-                                    data-aos="fade-up"
-                                    data-aos-duration="1000"
-                                    data-aos-delay={app.id * 100}
-                                    className="bg-white/70 backdrop-blur-md p-5 rounded-3xl shadow-lg 
-                                    hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
-                                >
-                                    <Appk app={app} />
-                                </div>
-                            ))}
+                            {filteredApps.length > 0 ? (
+                                filteredApps.map(app => (
+                                    <div
+                                        key={app._id}
+                                        data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        className="bg-white/70 backdrop-blur-md p-5 rounded-3xl shadow-lg 
+                                        hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+                                    >
+                                        <Appk app={app} />
+                                    </div>
+                                ))
+                            ) : (
+                                <p className="col-span-full text-center text-gray-500 text-lg">
+                                    No products found
+                                </p>
+                            )}
                         </div>
                     )}
 
