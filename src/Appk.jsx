@@ -2,67 +2,66 @@ import React from "react";
 import { Link } from "react-router";
 
 const Appk = ({ app }) => {
-    const { _id, name, category, image, location, price } = app;
+    const { _id, name, category, image,  price,
+        description
+    } = app;
+    console.log(app)
 
     return (
         <div className="w-full h-full">
-            <div
-                className="
-                h-full flex flex-col
-                bg-white/80 backdrop-blur-md
-                rounded-3xl overflow-hidden
-                shadow-lg hover:shadow-purple-300
-                hover:-translate-y-2 transition-all duration-300
-            "
-            >
-            
-                <figure className="h-56 overflow-hidden">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+
+                {/* Image Section */}
+                <div className="relative">
                     <img
                         src={image}
                         alt={name}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        className="w-full h-64 object-cover"
                     />
-                </figure>
 
+                    {/* Price Tag */}
+                    <div className="absolute top-4 right-4 px-4 py-1 rounded-full text-sm font-bold text-white
+                        bg-gradient-to-r from-orange-500 to-orange-400">
+                        {price === 0 ? "Free" : `৳ ${price}`}
+                    </div>
+                </div>
 
-                <div className="flex flex-col justify-between flex-1 p-5 bg-gradient-to-b from-pink-100/60 to-purple-100/60">
+                {/* Content Section */}
+                <div className="p-6 text-left">
 
-            
-                    <h2 className="text-xl font-bold text-pink-700 capitalize">
+                    {/* Category / Age */}
+                    <p className="text-orange-500 text-sm font-semibold mb-2 uppercase">
+                        {category}
+                    </p>
+
+                    {/* Product Name */}
+                    <h2 className="text-2xl font-bold text-gray-700 mb-4 tracking-tight">
                         {name}
                     </h2>
 
-                    
-                    <p className="text-sm text-purple-700 font-medium mt-1">
-                        Category: {category}
+                    {/* Description */}
+                    <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                     {
+                            description
+                        }
                     </p>
 
-            
-                    <div className="flex justify-between items-center mt-4">
-
-                        
-                        <span className="text-xs px-3 py-1 rounded-full bg-pink-200 text-pink-800 font-medium">
-                             {location}
-                        </span>
-
-                        
-                        <span className="text-xs px-3 py-1 rounded-full bg-purple-200 text-purple-800 font-semibold">
-                            {price === 0 ? "Free for Adoption" : `৳ ${price}`}
-                        </span>
+                    {/* Button */}
+                    <div className="flex justify-end">
+                        <Link to={`/details/${_id}`}>
+                            <button
+                                className="
+                                px-6 py-2 rounded-full font-bold text-white
+                                bg-gradient-to-r from-purple-600 to-blue-600
+                                hover:-translate-y-1 hover:shadow-lg
+                                transition-all duration-300
+                                "
+                            >
+                                Details
+                            </button>
+                        </Link>
                     </div>
 
-                    
-                    <Link to={`/details/${_id}`} className="mt-5">
-                        <button
-                            className="
-                            w-full py-2 rounded-xl
-                            bg-purple-600 text-white font-semibold
-                            hover:bg-purple-700 transition
-                        "
-                        >
-                            See Details
-                        </button>
-                    </Link>
                 </div>
             </div>
         </div>

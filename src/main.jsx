@@ -55,9 +55,9 @@ const router = createBrowserRouter([
         </PrivateRoute>),
 
         loader: async ({ params }) => {
-          const res = await fetch(`http://localhost:3000/services/${params.id}`);
+          const res = await fetch(`https://per-backends.vercel.app/services/${params.id}`);
           const data = await res.json();
-          console.log(data)
+          // console.log(data)
           return data
         },
 
@@ -91,7 +91,7 @@ const router = createBrowserRouter([
         path: "about",
         Component: About
       },
-        {
+      {
         path: "orders",
         element: <PrivateRoute><Orders></Orders></PrivateRoute>
       },

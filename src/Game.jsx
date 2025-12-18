@@ -12,7 +12,7 @@ const Game = () => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const res = await fetch('http://localhost:3000/services');
+                const res = await fetch('https://per-backends.vercel.app/services');
                 const data = await res.json();
                 setHomeApp(data);
             } catch (error) {
@@ -45,10 +45,10 @@ const Game = () => {
                         Pick Your Products
                     </h2>
 
-                    
+
                     <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
 
-                
+
                         <select
                             onChange={(e) => setCategory(e.target.value)}
                             value={category}
@@ -62,7 +62,7 @@ const Game = () => {
                             <option value="care-products">Care Products</option>
                         </select>
 
-            
+
                         <input
                             type="text"
                             placeholder="Search by product name..."
@@ -73,7 +73,7 @@ const Game = () => {
                         />
                     </div>
 
-        
+
                     {loading ? (
                         <div className="flex justify-center items-center py-20">
                             <span className="loading loading-bars loading-xl"></span>
@@ -86,8 +86,7 @@ const Game = () => {
                                         key={app._id}
                                         data-aos="fade-up"
                                         data-aos-duration="1000"
-                                        className="bg-white/70 backdrop-blur-md p-5 rounded-3xl shadow-lg 
-                                        hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+                                       
                                     >
                                         <Appk app={app} />
                                     </div>

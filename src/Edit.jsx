@@ -12,14 +12,14 @@ const Edit = () => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/services/${id}`)
+        axios.get(`https://per-backends.vercel.app/services/${id}`)
             .then(res => {
                 setServices(res.data)
                 setCategory(res.data.category)
             })
     }, [id])
 
-    console.log(services)
+    // console.log(services)
 
     const handleUpdate = (e) => {
         e.preventDefault();
@@ -46,12 +46,12 @@ const Edit = () => {
             date,
             email,
         }
-        console.log(formData)
+        // console.log(formData)
 
 
 
-        axios.put(`http://localhost:3000/update/${id}`, formData).then(res => {
-            console.log(res.data);
+        axios.put(`https://per-backends.vercel.app/update/${id}`, formData).then(res => {
+            // console.log(res.data);
             navigation('/myListing')
 
         })
@@ -70,7 +70,7 @@ const Edit = () => {
 
                 <form onSubmit={handleUpdate} className="space-y-5">
 
-                
+
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Product Name
@@ -86,7 +86,7 @@ const Edit = () => {
                         />
                     </div>
 
-            
+
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Category
@@ -108,7 +108,7 @@ const Edit = () => {
                         </select>
                     </div>
 
-            
+
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Price (Taka)
@@ -124,7 +124,7 @@ const Edit = () => {
                         />
                     </div>
 
-        
+
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Image URL
@@ -141,7 +141,7 @@ const Edit = () => {
                         />
                     </div>
 
-                
+
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Location
@@ -157,7 +157,7 @@ const Edit = () => {
                         />
                     </div>
 
-    
+
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Description
@@ -173,7 +173,7 @@ const Edit = () => {
                         ></textarea>
                     </div>
 
-                    
+
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Date
@@ -187,7 +187,7 @@ const Edit = () => {
                         />
                     </div>
 
-    
+
                     <div className="flex flex-col">
                         <label className="text-left text-sm font-medium text-gray-600">
                             Email

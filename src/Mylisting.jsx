@@ -15,7 +15,7 @@ const Mylisting = () => {
         const fetchListings = async () => {
             try {
                 setLoading(true); // start loading
-                const res = await fetch(`http://localhost:3000/MyListing?email=${user.email}`);
+                const res = await fetch(`https://per-backends.vercel.app/MyListing?email=${user.email}`);
                 const data = await res.json();
                 setMyListing(data);
             } catch (err) {
@@ -40,7 +40,7 @@ const Mylisting = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 axios
-                    .delete(`http://localhost:3000/delete/${id}`)
+                    .delete(`https://per-backends.vercel.app/delete/${id}`)
                     .then(() => {
                         setMyListing((prev) => prev.filter((item) => item._id !== id));
                         Swal.fire("Deleted!", "Your item has been deleted.", "success");
@@ -56,18 +56,18 @@ const Mylisting = () => {
         <div className="min-h-screen bg-[#F9FAFB] p-6">
             <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-md p-6">
 
-            
+
                 <h2 className="text-2xl font-bold text-gray-800 mb-6">
                     My Listings
                 </h2>
 
-                
+
                 {loading ? (
                     <div className="flex justify-center items-center py-20">
                         <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-b-4 border-gray-200"></div>
                     </div>
                 ) : (
-            
+
                     <div className="overflow-x-auto">
                         <table className="table w-full">
                             <thead className="bg-gray-100 text-gray-700">

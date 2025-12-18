@@ -7,7 +7,7 @@ import axios from "axios";
 const Details = () => {
     const app = useLoaderData();
     const { user } = useContext(AuthContext)
-    console.log(app)
+    // console.log(app)
 
 
     const handleOrder = (e) => {
@@ -33,16 +33,16 @@ const Details = () => {
             date: new Date()
         }
 
-        axios.post('http://localhost:3000/orders', formData)
+        axios.post('https://per-backends.vercel.app/orders', formData)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 alert("order confirm")
             })
             .catch(err => {
                 console.log(err);
             })
 
-        console.log(formData)
+        // console.log(formData)
 
 
     }
@@ -53,7 +53,7 @@ const Details = () => {
                 <div className="relative w-full min-h-screen bg-gradient-to-b from-pink-100 via-purple-100 to-blue-100 py-10 px-6 flex justify-center text-gray-800">
                     <div className="w-full max-w-5xl bg-white shadow-2xl rounded-2xl overflow-hidden">
                         <div className="grid md:grid-cols-2 gap-6 p-6">
-                        
+
                             <div className="flex justify-center items-center">
                                 <img
                                     src={app.image}
@@ -62,7 +62,7 @@ const Details = () => {
                                 />
                             </div>
 
-                            
+
                             <div className="space-y-4 py-2">
                                 <h1 className="text-4xl font-bold capitalize">{app.name}</h1>
                                 <p className="text-gray-600 text-base leading-relaxed">
@@ -96,14 +96,14 @@ const Details = () => {
                                     </p>
                                 </div>
 
-                            
+
                                 <div className="flex items-center gap-4 mt-6">
                                     <button className="px-6 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transititext-lg font-semibold shadow-md" onClick={() => document.getElementById('my_modal_3').showModal()}>Buy Now</button>
 
 
                                     <dialog id="my_modal_3" className="modal w-full max-w-lg p-0 rounded-xl overflow-hidden  modal-middle">
                                         <div className="modal-box p-6 relative bg-white shadow-lg rounded-xl ">
-                                        
+
                                             <button
                                                 className="btn btn-sm btn-circle btn-ghost absolute right-4 top-4 text-gray-500 hover:text-gray-800"
                                                 onClick={() => document.getElementById('my_modal_3').close()}
@@ -114,7 +114,7 @@ const Details = () => {
                                             <h3 className="text-2xl font-bold mb-4 text-center text-purple-600">Place Your Order</h3>
 
                                             <form onSubmit={handleOrder} className="flex flex-col gap-4 max-h-[70vh] overflow-y-auto">
-                                        
+
                                                 <div className="flex flex-col">
                                                     <label className="label text-sm font-semibold">Product Name</label>
                                                     <input
@@ -126,7 +126,7 @@ const Details = () => {
                                                     />
                                                 </div>
 
-                                        
+
                                                 <div className="flex flex-col">
                                                     <label className="label text-sm font-semibold">Your Name</label>
                                                     <input
@@ -137,7 +137,7 @@ const Details = () => {
                                                     />
                                                 </div>
 
-                                        
+
                                                 <div className="flex flex-col">
                                                     <label className="label text-sm font-semibold">Email</label>
                                                     <input
@@ -149,7 +149,7 @@ const Details = () => {
                                                     />
                                                 </div>
 
-                                        
+
                                                 <div className="flex gap-4">
                                                     <div className="flex-1 flex flex-col">
                                                         <label className="label text-sm font-semibold">Quantity</label>
@@ -171,7 +171,7 @@ const Details = () => {
                                                         />
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div className="flex flex-col">
                                                     <label className="label text-sm font-semibold">Address</label>
                                                     <input
@@ -182,7 +182,7 @@ const Details = () => {
                                                     />
                                                 </div>
 
-                                        
+
                                                 <div className="flex flex-col">
                                                     <label className="label text-sm font-semibold">Phone</label>
                                                     <input
@@ -192,7 +192,7 @@ const Details = () => {
                                                         placeholder="Phone"
                                                     />
                                                 </div>
-                                                
+
                                                 <div className="flex flex-col">
                                                     <label className="label text-sm font-semibold">Additional Note</label>
                                                     <input
@@ -203,7 +203,7 @@ const Details = () => {
                                                     />
                                                 </div>
 
-                                    
+
                                                 <button type="submit" className="btn btn-primary w-full mt-2">
                                                     Order Now
                                                 </button>

@@ -11,7 +11,7 @@ const Orders = () => {
         const fetchOrders = async () => {
             try {
                 setLoading(true);
-                const res = await axios.get("http://localhost:3000/orders");
+                const res = await axios.get("https://per-backends.vercel.app/orders");
                 setMyOrders(res.data);
             } catch (err) {
                 console.log(err);
@@ -23,15 +23,15 @@ const Orders = () => {
         fetchOrders();
     }, []);
 
-    
+
     const handleDownloadPDF = () => {
         const doc = new jsPDF();
 
-        
+
         doc.setFontSize(18);
         doc.text("My Orders Report - PawMart", 14, 15);
 
-    
+
         const tableColumn = [
             "#",
             "Product Name",
@@ -42,7 +42,7 @@ const Orders = () => {
             "Date",
         ];
 
-    
+
         const tableRows = [];
 
         myOrders.forEach((order, index) => {
@@ -77,13 +77,13 @@ const Orders = () => {
 
         doc.save("my-orders-report.pdf");
     };
-    
+
 
     return (
         <div className="min-h-screen bg-[#F9FAFB] p-6">
             <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-md p-6">
 
-                
+
                 <div className="flex justify-between items-center mb-6">
                     <h2 className="text-2xl font-bold text-gray-800">
                         My Orders
@@ -97,7 +97,7 @@ const Orders = () => {
                     </button>
                 </div>
 
-                
+
                 {loading ? (
                     <div className="flex justify-center items-center py-20">
                         <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-purple-500 border-b-4 border-gray-200"></div>
