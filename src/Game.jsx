@@ -35,13 +35,13 @@ const Game = () => {
     });
 
     return (
-        <div className="min-h-screen bg-gradient-to-b bg-[#E8F5E9] text-gray-900 pb-20">
+        <div className="min-h-screen bg-gradient-to-b bg-[#f7f1f1] text-gray-900 pb-20">
 
             <section className="py-16 px-4">
                 <div className="container mx-auto">
 
-                    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 
-                    text-pink-600 drop-shadow-lg tracking-wide font-serif">
+                    <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12 
+                     text-rose-500 drop-shadow-lg tracking-wide ">
                         Pick Your Products
                     </h2>
 

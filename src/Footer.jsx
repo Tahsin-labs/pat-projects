@@ -16,7 +16,7 @@ const Footer = () => {
                         <p>Corporate Office: Zakir Complex (9th Floor)</p>
                         <p>Pickup Point: Siraj Garden, Ka-193/B, </p>
                         <a href="https://www.google.com/maps" target="_blank" className="text-purple-500 hover:underline">Get Direction</a>
-                        <p>Phone: <a href="tel:+8801322908241" className="hover:text-purple-500">(+88) 01322 908 241</a></p>
+                        <p>Phone: <a href="tel:+8801322908241" className="hover:text-purple-500">(+88) 01875190045</a></p>
                         <p>Email: <a href="mailto:support@amarpet.com" className="hover:text-purple-500">support@amarpet.com</a></p>
                     </div>
 
